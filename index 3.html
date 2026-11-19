@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#062b21">
+  <meta name="description" content="رِواق مساحة تفاعلية لاكتشاف تنوّع التراث السعودي؛ من العمارة والأزياء إلى الفنون والمذاقات والمواقع المسجلة في قائمة التراث العالمي.">
+  <title>رِواق | اكتشف عمق التراث السعودي</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800&family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">تجاوز إلى المحتوى</a>
+  <div class="page-loader" id="page-loader" role="status" aria-live="polite">
+    <div class="loader-aura" aria-hidden="true"></div>
+    <div class="loader-content">
+      <span class="loader-seal" aria-hidden="true"><svg viewBox="0 0 44 44"><path d="M6 37V20C6 11 13 5 22 5s16 6 16 15v17M12 37V21c0-6 4-10 10-10s10 4 10 10v16M3 37h38M17 37V26a5 5 0 0 1 10 0v11"/></svg></span>
+      <strong>رِواق</strong>
+      <span class="loader-tagline">ذَاكِرَةُ أَرْضٍ حَيَّة</span>
+      <span class="loader-phrase">عزٍّ يمتد من الماضي للحاضر..</span>
+      <span class="loader-message">لحظات ونفتح لك الأبواب</span>
+      <span class="loader-track" aria-hidden="true"><i></i></span>
+      <span class="loader-index" aria-hidden="true">التراث السعودي · ٠١ / ٠٧</span>
+    </div>
+  </div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+  <div class="announcement"><span class="announcement-mark" aria-hidden="true">✳</span><span>حكاية مكانٍ… وذاكرة شعب</span><span class="announcement-line" aria-hidden="true"></span><span class="announcement-note">من قلب الجزيرة العربية</span></div>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="رِواق، العودة إلى الرئيسية">
+        <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 44 44"><path d="M6 37V20C6 11 13 5 22 5s16 6 16 15v17"/><path d="M12 37V21c0-6 4-10 10-10s10 4 10 10v16"/><path d="M3 37h38M17 37V26a5 5 0 0 1 10 0v11"/><path d="m10 12 4 3m20-3-4 3"/></svg></span>
+        <span class="brand-copy"><strong>رِواق</strong><small>ذاكرةُ أرضٍ حيّة</small></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="فتح قائمة التنقل" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="التنقل الرئيسي">
+        <a href="#home">الرئيسية</a>
+        <a href="#regions">المناطق</a>
+        <a href="#fashion">الأزياء</a>
+        <a href="#architecture">العمارة</a>
+        <a href="#arts">الفنون والمذاقات</a>
+        <a href="#unesco">اليونسكو</a>
+        <button class="audio-toggle" id="audio-toggle" type="button" aria-label="كتم المؤثرات الصوتية" aria-pressed="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l5 4V6l-5 4H4Z"/><path d="M16 9a5 5 0 0 1 0 6M18.5 6.5a9 9 0 0 1 0 11"/></svg>
+          <span id="audio-toggle-label">الصوت يعمل</span>
+        </button>
+      </nav>
+      <form class="nav-search" id="quick-search" role="search">
+        <label class="sr-only" for="quick-search-input">ابحث في التراث السعودي</label>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg>
+        <input id="quick-search-input" type="search" placeholder="ابحث عن حكاية…" autocomplete="off">
+        <kbd>⌕</kbd>
+      </form>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/hegra.jpg" alt="واجهات مقابر نبطية منحوتة في الحجر الرملي بموقع الحِجر" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-content page-shell">
+        <p class="eyebrow eyebrow-light"><span class="eyebrow-dash"></span> رحلةٌ بين خمسة أقاليم</p>
+        <h1 id="hero-title">اكتشف عمق<br><em>التراث السعودي</em></h1>
+        <p class="hero-lead">من نقوش الجبال إلى أبواب البيوت الطينية، ومن إيقاع العرضة إلى فنجال القهوة الأول… لكل تفصيل حكاية تستحق أن تُروى.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#regions">ابدأ الرحلة الاستكشافية <span aria-hidden="true">←</span></a>
+          <a class="hero-text-link" href="#discover">تصفّح الحكايات <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="hero-location"><span class="location-pin" aria-hidden="true">⌖</span><span>الحِجر <small>العُلا · شمال غرب المملكة</small></span></div>
+      <div class="hero-index"><span>01</span><i></i><span>07</span></div>
+      <div class="hero-bottom page-shell"><span>من الأرض تبدأ الحكاية</span><span class="scroll-cue"><i></i> مرّر لاكتشاف المزيد</span></div>
+    </section>
+
+    <section class="intro-section page-shell section-pad" data-reveal>
+      <div class="intro-label"><span class="section-number">01 / 07</span><span class="vertical-rule"></span><span>عن رِواق</span></div>
+      <div class="intro-copy">
+        <p class="eyebrow">تراثٌ يتجدّد</p>
+        <h2>المكان ليس جغرافيا فقط؛<br><em>إنه ما نحمله معنا.</em></h2>
+        <p>رِواق نافذةٌ إلى الذاكرة السعودية؛ نقترب فيها من البيوت التي علّمتنا كيف نتكيّف، والأقمشة التي حفظت هوية المكان، والأهازيج التي جمعت الناس في الفرح والعمل.</p>
+        <a class="underlined-link" href="#discover">تصفّح مكتبة الحكايات <span aria-hidden="true">↙</span></a>
+      </div>
+      <div class="intro-side">
+        <div class="intro-seal" aria-hidden="true"><span>منذُ قرون</span><b>تراث<br>حيّ</b><span>إلى الغد</span></div>
+        <p>من الشمال إلى الجنوب، ومن الساحل إلى الواحة، تتجاور روايات كثيرة في وطنٍ واحد.</p>
+      </div>
+    </section>
+
+    <section class="regions-section section-pad" id="regions" aria-labelledby="regions-title">
+      <div class="page-shell">
+        <div class="section-heading" data-reveal>
+          <div><p class="eyebrow">02 / خريطة الحكايات</p><h2 id="regions-title">خمس مناطق، <em>ألف ملامح</em></h2></div>
+          <p class="section-deck">اختر منطقةً لتقترب من تاريخها ومعالمها وعاداتها وفنونها الشعبية.</p>
+        </div>
+        <div class="region-explorer" data-reveal>
+          <div class="region-list" role="tablist" aria-label="اختر منطقة من مناطق المملكة" id="region-tabs">
+            <button class="region-tab is-active" role="tab" aria-selected="true" aria-controls="region-panel" data-region="central"><span>١</span>الوسطى<i aria-hidden="true">↙</i></button>
+            <button class="region-tab" role="tab" aria-selected="false" aria-controls="region-panel" data-region="west"><span>٢</span>الغربية<i aria-hidden="true">↙</i></button>
+            <button class="region-tab" role="tab" aria-selected="false" aria-controls="region-panel" data-region="east"><span>٣</span>الشرقية<i aria-hidden="true">↙</i></button>
+            <button class="region-tab" role="tab" aria-selected="false" aria-controls="region-panel" data-region="north"><span>٤</span>الشمالية<i aria-hidden="true">↙</i></button>
+            <button class="region-tab" role="tab" aria-selected="false" aria-controls="region-panel" data-region="south"><span>٥</span>الجنوبية<i aria-hidden="true">↙</i></button>
+          </div>
+          <article class="region-panel" id="region-panel" role="tabpanel" tabindex="0" aria-live="polite">
+            <div class="region-panel-image-wrap"><img id="region-image" src="assets/at-turaif.jpg" alt="حي الطريف التاريخي في الدرعية"><span class="image-caption" id="region-caption">الدرعية · قلب الدولة السعودية الأولى</span></div>
+            <div class="region-panel-copy">
+              <div class="region-kicker"><span id="region-kicker">قلب الجزيرة</span><span id="region-index">01 / 05</span></div>
+              <h3 id="region-name">المنطقة الوسطى</h3>
+              <p id="region-summary"></p>
+              <div class="region-facts">
+                <div><span>معالم لا تُنسى</span><strong id="region-landmarks"></strong></div>
+                <div><span>من عاداتها</span><strong id="region-customs"></strong></div>
+                <div><span>إيقاعها الشعبي</span><strong id="region-art"></strong></div>
+              </div>
+              <a class="underlined-link" href="#discover" id="region-discover">اكتشف حكايات المنطقة <span aria-hidden="true">↙</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="sadu-divider" aria-hidden="true"><span></span><i></i><span></span><i></i><span></span></div>
+    </section>
+
+    <section class="discover-section section-pad page-shell" id="discover" aria-labelledby="discover-title">
+      <div class="section-heading" data-reveal>
+        <div><p class="eyebrow">03 / مكتبة رِواق</p><h2 id="discover-title">اختر خيطًا…<br><em>وسنقودك للحكاية.</em></h2></div>
+        <p class="section-deck">ابحث بالاسم أو المنطقة، ثم صفِّ النتائج بحسب ما يلفت انتباهك.</p>
+      </div>
+      <div class="explorer-tools" data-reveal>
+        <label class="explore-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><span class="sr-only">بحث في مكتبة رِواق</span><input id="explore-search" type="search" placeholder="مثلاً: رواشين، جريش، العرضة…"></label>
+        <label class="region-select-label"><span>المنطقة</span><select id="region-filter" aria-label="تصفية حسب المنطقة"><option value="all">كل المناطق</option><option value="central">الوسطى</option><option value="west">الغربية</option><option value="east">الشرقية</option><option value="north">الشمالية</option><option value="south">الجنوبية</option></select></label>
+      </div>
+      <div class="filter-row" role="group" aria-label="تصفية حسب التصنيف" data-reveal>
+        <button class="filter-chip is-active" data-type="all" aria-pressed="true">الكل <span>٠١</span></button>
+        <button class="filter-chip" data-type="architecture" aria-pressed="false">عمارة</button>
+        <button class="filter-chip" data-type="fashion" aria-pressed="false">أزياء</button>
+        <button class="filter-chip" data-type="food" aria-pressed="false">أكل وضيافة</button>
+        <button class="filter-chip" data-type="art" aria-pressed="false">فنون</button>
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+      </div>
+      <div class="discover-grid" id="discover-grid" aria-live="polite"></div>
+      <p class="empty-state" id="empty-state" hidden>لم نعثر على حكاية مطابقة. جرّب كلمةً أخرى أو غيّر عوامل التصفية.</p>
+    </section>
+
+    <section class="architecture-section section-pad" id="architecture" aria-labelledby="architecture-title">
+      <div class="page-shell">
+        <div class="section-heading section-heading-contrast" data-reveal>
+          <div><p class="eyebrow eyebrow-light">04 / عمارةٌ من الأرض</p><h2 id="architecture-title">بيوتٌ تعرف<br><em>كيف تصادق بيئتها.</em></h2></div>
+          <p class="section-deck">الطين والحجر والمرجان والخشب؛ مواد محلية صاغت حلولًا ذكيةً للمناخ والحياة.</p>
+        </div>
+        <div class="architecture-grid">
+          <article class="architecture-card architecture-card-feature" data-reveal>
+            <img src="assets/at-turaif.jpg" alt="تفاصيل الطين والكتل المتدرجة في عمارة حي الطريف بالدرعية" loading="lazy">
+            <div class="architecture-card-overlay"><span class="card-index">01 — الوسطى</span><div><h3>النجديّة</h3><p>طينٌ وجدرانٌ سميكة وساحات داخلية؛ عزلٌ طبيعيّ يلطّف حرّ الصيف، وزخارف هندسية تميّز الواجهات.</p></div><a href="#unesco" aria-label="استكشف حي الطريف في الدرعية">↗</a></div>
+          </article>
+          <article class="architecture-card" data-reveal>
+            <img src="assets/jeddah.jpg" alt="تفاصيل البيت التقليدي في جدة التاريخية" loading="lazy">
+            <div class="architecture-card-overlay"><span class="card-index">02 — الغربية</span><div><h3>الحجازيّة</h3><p>بيوت من الحجر المرجاني ورواشين خشبية بارزة تلطّف الضوء وتهوّي الغرف المطلة على الأزقة.</p></div><a href="#unesco" aria-label="اقرأ عن جدة التاريخية">↗</a></div>
+          </article>
+            <article class="architecture-card" data-reveal>
+              <img src="assets/rijal-almaa.jpg" alt="قرية رجال ألمع الحجرية في منطقة عسير" loading="lazy">
+              <div class="architecture-card-overlay"><span class="card-index">03 — الجنوبية</span><div><h3>العسيريّة</h3><p>قصور حجرية متراصّة على سفوح الجبال، تزيّن واجهاتها الداخلية ألوان القط العسيري وخطوطه.</p></div><a href="#arts" aria-label="اكتشف الفنون البصرية في عسير">↗</a></div>
+          </article>
+          <article class="architecture-card" data-reveal>
+            <img src="assets/qaisariah.jpg" alt="سوق القيصرية التاريخي في الأحساء" loading="lazy">
+            <div class="architecture-card-overlay"><span class="card-index">04 — الشرقية</span><div><h3>عمارة الواحة والساحل</h3><p>في الأحساء تتجاور الأسواق المسقوفة والبيوت الطينية مع عمارة النخيل؛ تصميمٌ يراعي الظلّ والتهوية.</p></div><a href="#unesco" aria-label="اكتشف واحة الأحساء">↗</a></div>
+          </article>
+        </div>
+        <div class="architecture-note" data-reveal><span>ملاحظة معمارية</span><p>لم تكن المادة اختيارًا جماليًا فحسب؛ بل معرفةً متوارثة بتقلّب الطقس، واتجاه الريح، ووفرة الموارد.</p></div>
+      </div>
+    </section>
+
+    <section class="fashion-section section-pad page-shell" id="fashion" aria-labelledby="fashion-title">
+      <div class="section-heading" data-reveal>
+        <div><p class="eyebrow">05 / ما تلبسه الذاكرة</p><h2 id="fashion-title">الثوبُ يروي<br><em>حكاية أهله.</em></h2></div>
+        <p class="section-deck">تنوّعت الخامات والزخارف بحسب المناخ والمناسبة، وبقيت الحِرفة خيطًا يصل الأجيال.</p>
+      </div>
+      <div class="fashion-controls" role="group" aria-label="تصفية الأزياء حسب المنطقة" data-reveal>
+        <span>تصفّح الأزياء</span>
+        <button class="fashion-filter is-active" data-fashion-region="all" aria-pressed="true">كل المناطق</button>
+        <button class="fashion-filter" data-fashion-region="central" aria-pressed="false">الوسطى</button>
+        <button class="fashion-filter" data-fashion-region="west" aria-pressed="false">الغربية</button>
+        <button class="fashion-filter" data-fashion-region="east" aria-pressed="false">الشرقية</button>
+        <button class="fashion-filter" data-fashion-region="north" aria-pressed="false">الشمالية</button>
+        <button class="fashion-filter" data-fashion-region="south" aria-pressed="false">الجنوبية</button>
+      </div>
+      <div class="fashion-grid" id="fashion-grid"></div>
+      <div class="fashion-footnote" data-reveal><span class="ornament-star" aria-hidden="true">✳</span><p>تختلف أسماء القطع وهيئاتها من قريةٍ إلى أخرى؛ وما نعرضه هنا نماذج من تنوّعٍ أوسع.</p></div>
+    </section>
+
+    <section class="arts-section section-pad" id="arts" aria-labelledby="arts-title">
+      <div class="page-shell">
+        <div class="section-heading section-heading-contrast" data-reveal>
+          <div><p class="eyebrow eyebrow-light">06 / إيقاعٌ ومذاق</p><h2 id="arts-title">حين يبدأ الإيقاع،<br><em>تجتمع الحكاية.</em></h2></div>
+          <p class="section-deck">أصواتٌ للفرح والاحتفاء والعمل، تُحفظ في الذاكرة وتُؤدّى جماعةً.</p>
+        </div>
+        <div class="arts-grid" id="arts-grid"></div>
+        <div class="cuisine-block" id="cuisine" aria-labelledby="cuisine-title" data-reveal>
+          <div class="coffee-photo"><img src="assets/coffee-dates.jpg" alt="دلة قهوة عربية وفناجين وتمر" loading="lazy"><span>من طقوس الضيافة</span></div>
+          <div class="coffee-story">
+            <p class="eyebrow eyebrow-light">على مهلٍ… تُعدّ القهوة</p>
+            <h3 id="cuisine-title">من صوتِ الهيل<br>إلى <em>دفء الفنجال.</em></h3>
+            <p>تُحمّص حبوب البن، ثم تُغلى وتُضاف إليها نكهات الهيل، وقد يُضاف الزعفران أو القرنفل بحسب الذائقة. تُقدّم القهوة في دلةٍ تحفظ حرارتها، ويُصبّ منها قليلٌ في فنجال صغير؛ إشارةٌ إلى الترحيب وكرم المجلس.</p>
+            <div class="coffee-steps"><span><b>١</b> تحميص البن</span><i></i><span><b>٢</b> إضافة الهيل</span><i></i><span><b>٣</b> تقديم الفنجال</span></div>
+            <p class="coffee-caption">تختلف الوصفات بين البيوت والمناطق؛ وهذه لمحة عن عادة ضيافة واسعة الانتشار.</p>
+          </div>
+        </div>
+        <div class="food-heading" data-reveal><div><p class="eyebrow eyebrow-light">من مطابخ المناطق</p><h3>مذاقاتٌ لها <em>عنوان.</em></h3></div><p>من سفرة العيد إلى دفء الشتاء، أطباقٌ تسكن تفاصيل الحياة اليومية.</p></div>
+        <div class="food-grid" id="food-grid"></div>
+      </div>
+    </section>
+
+    <section class="unesco-section section-pad page-shell" id="unesco" aria-labelledby="unesco-title">
+      <div class="section-heading" data-reveal>
+        <div><p class="eyebrow">07 / ذاكرةٌ تتشاركها الإنسانية</p><h2 id="unesco-title">من أرضنا إلى<br><em>قائمة التراث العالمي.</em></h2></div>
+        <p class="section-deck">تعرّف إلى مواقع المملكة المسجّلة لدى اليونسكو، مرتّبةً بحسب سنة الإدراج.</p>
+      </div>
+      <div class="timeline-wrap" data-reveal>
+        <div class="timeline-rail" aria-hidden="true"><span></span></div>
+        <div class="timeline" id="unesco-timeline" role="tablist" aria-label="المواقع السعودية المسجلة في قائمة التراث العالمي"></div>
+      </div>
+      <article class="unesco-feature" id="unesco-feature" role="tabpanel" tabindex="0" aria-labelledby="unesco-tab-hegra" aria-live="polite" data-reveal>
+        <div class="unesco-feature-mark"><span>UNESCO</span><b id="unesco-year">2008</b></div>
+        <div class="unesco-feature-copy"><p class="eyebrow">موقعٌ من القائمة</p><h3 id="unesco-name">الحِجر (مدائن صالح)</h3><p id="unesco-description"></p></div>
+        <a id="unesco-link" class="button button-outline" href="https://whc.unesco.org/en/list/1293/" target="_blank" rel="noreferrer">اقرأ عن الموقع <span aria-hidden="true">↗</span></a>
+      </article>
+      <p class="unesco-note">بيانات الإدراج من مركز التراث العالمي لليونسكو. و«القائمة التمثيلية للتراث الثقافي غير المادي» تختلف عن قائمة مواقع التراث العالمي؛ لذلك يركّز هذا الخط على المواقع السبعة المدرجة.</p>
+    </section>
+
+    <section class="closing-band" aria-label="ختام الرحلة">
+      <div class="closing-pattern" aria-hidden="true"></div>
+      <div class="page-shell closing-inner" data-reveal><span class="closing-symbol" aria-hidden="true">✳</span><p>كل ما نعرفه عن الغد،<br>بدأ من حكايةٍ في الأمس.</p><a class="button button-gold" href="#top">عُد إلى بداية الرحلة <span aria-hidden="true">↑</span></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-shell footer-main">
+      <div class="footer-brand"><a class="brand brand-light" href="#home"><span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 44 44"><path d="M6 37V20C6 11 13 5 22 5s16 6 16 15v17"/><path d="M12 37V21c0-6 4-10 10-10s10 4 10 10v16"/><path d="M3 37h38M17 37V26a5 5 0 0 1 10 0v11"/></svg></span><span class="brand-copy"><strong>رِواق</strong><small>ذاكرةُ أرضٍ حيّة</small></span></a><p>مشروع معرفيّ يحتفي بثراء التراث السعودي وتنوّعه، ويقرّب حكاياته إلى جيلٍ جديد.</p></div>
+      <div class="footer-links"><h3>تصفّح رِواق</h3><a href="#regions">المناطق والتراث</a><a href="#architecture">العمارة</a><a href="#fashion">الأزياء</a><a href="#arts">الفنون والمأكولات</a><a href="#unesco">مواقع اليونسكو</a></div>
+      <div class="footer-links footer-about"><h3>عن المشروع</h3><p>محتوى تعريفي للاستكشاف والتعلّم؛ نحرص على ذكر المصادر والتراخيص للصور المستخدمة.</p><a href="#credits">مصادر الصور والتراخيص <span aria-hidden="true">↗</span></a></div>
+      <div class="footer-mark" aria-hidden="true"><span>١٤٤٧</span><b>رِواق</b><span>المملكة العربية السعودية</span></div>
+    </div>
+    <div class="page-shell credit-details" id="credits">
+      <details><summary>مصادر الصور وتراخيصها</summary><ul>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Al-Hijr_Archaeological_Site_(Mad%C3%A2in_S%C3%A2lih)-114607.jpg" target="_blank" rel="noreferrer">الحِجر — Véronique Dauge / UNESCO</a>، <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/" target="_blank" rel="noreferrer">CC BY-SA 3.0 IGO</a>.</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:At-Turaif_District.jpg" target="_blank" rel="noreferrer">حي الطريف — xiquinhosilva</a>، <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noreferrer">CC BY 2.0</a>.</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Traditional_house_interior_in_Historic_Jeddah,_Saudi_Arabia.jpg" target="_blank" rel="noreferrer">جدة التاريخية — Anne and David</a>، <a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noreferrer">Public Domain Mark</a>.</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Rojal_Heritage_Village_-_Rijal_Almaa_Heritage_Village,_Asir,_Saudi_Arabia-3.jpg" target="_blank" rel="noreferrer">رجال ألمع — Shijan Kaakkara</a>، <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a>.</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:%D8%B3%D9%88%D9%82_%D8%A7%D9%84%D9%82%D9%8A%D8%B5%D8%B1%D9%8A%D8%A9.jpg" target="_blank" rel="noreferrer">سوق القيصرية — saudipics</a>، <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a>.</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Arabic_coffee_with_dates.jpg" target="_blank" rel="noreferrer">القهوة والتمر — Slywire</a>، <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a>.</li>
+      </ul><p class="change-note">قُصّت/نُسّقت الصور لتناسب تخطيط الموقع، ولم يُجرَ عليها تعديل تصويري.</p></details>
+    </div>
+    <div class="page-shell footer-bottom"><span>© <span id="current-year"></span> رِواق — مشروع ثقافي مستقل.</span><a href="#top">إلى الأعلى ↑</a><span>صُنع بحبٍّ للتفاصيل السعودية</span></div>
+  </footer>
+
+  <dialog class="detail-dialog" id="detail-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" id="dialog-close" aria-label="إغلاق النافذة">×</button>
+    <p class="eyebrow" id="dialog-kicker">من حكايات رِواق</p><h2 id="dialog-title"></h2><p id="dialog-body"></p><div class="dialog-tags" id="dialog-tags"></div>
+  </dialog>
+  <script>
+window.RIWAQ_DATA = {
+  regions: {
+    central: {
+      name: 'المنطقة الوسطى', kicker: 'قلب الجزيرة', index: '01 / 05', image: 'assets/at-turaif.jpg', alt: 'الدرعية وحي الطريف التاريخي', caption: 'الدرعية · قلب الدولة السعودية الأولى',
+      summary: 'على ضفاف وادي حنيفة، نشأت الدرعية وصارت مركزًا سياسيًا وثقافيًا في قلب نجد. تعكس عمارتها الطينية معرفةً دقيقةً بالمناخ، فيما تختزن الرياض والقصيم والوشم روايات البادية والواحة والمدينة.',
+      landmarks: 'حي الطريف، قصر المصمك، أشيقر', customs: 'المجلس، القهوة العربية، العرضة', art: 'العرضة النجدية والسامري'
+    },
+    west: {
+      name: 'المنطقة الغربية', kicker: 'بوابة البحر والحج', index: '02 / 05', image: 'assets/jeddah.jpg', alt: 'بيت تقليدي في جدة التاريخية', caption: 'البلد · جدة التاريخية',
+      summary: 'على ساحل البحر الأحمر، تلاقت في الحجاز طرق التجارة والحج وثقافات القادمين من أنحاء العالم. تروي الأزقة الضيقة والرواشين الخشبية قصة بيوت جدة، فيما تحفظ مكة والمدينة ذاكرة المكان والرحلة.',
+      landmarks: 'بيت نصيف، باب مكة، جدة التاريخية', customs: 'المجالس الحجازية، الأسواق، الضيافة', art: 'المزمار والخبيتي'
+    },
+    east: {
+      name: 'المنطقة الشرقية', kicker: 'ظلّ النخيل وأفق الخليج', index: '03 / 05', image: 'assets/qaisariah.jpg', alt: 'سوق القيصرية في الأحساء', caption: 'سوق القيصرية · الأحساء',
+      summary: 'من واحة الأحساء إلى سواحل الخليج، تشكّلت حياةٌ بين النخيل والبحر. حفظت الأسواق المسقوفة والبيوت الطينية أثر التجارة، فيما صاغ الغوص على اللؤلؤ والزراعة عادات الناس وأغانيهم.',
+      landmarks: 'واحة الأحساء، سوق القيصرية، قلعة تاروت', customs: 'مواسم التمر، الغوص، ضيافة الواحة', art: 'الفجري والليوة'
+    },
+    north: {
+      name: 'المنطقة الشمالية', kicker: 'أثرٌ على درب القوافل', index: '04 / 05', image: 'assets/hegra.jpg', alt: 'واجهات حجرية منحوتة في موقع الحِجر', caption: 'الحِجر · العُلا',
+      summary: 'على تخوم طرق القوافل، تشهد العلا وحائل والجوف على استقرارٍ قديمٍ واتصالٍ بعيد. نقوش جبل أم سنمان في جبة تسجّل حضور الإنسان، وتروي القلاع والأسواق محطات السفر والعيش في الشمال.',
+      landmarks: 'الحِجر، جبة، قلعة مارد', customs: 'إكرام الضيف، المجالس، القهوة', art: 'الدحّة والسامري'
+    },
+    south: {
+      name: 'المنطقة الجنوبية', kicker: 'مدرّجات الجبل ودفء الألوان', index: '05 / 05', image: 'assets/rijal-almaa.jpg', alt: 'قرية رجال ألمع التراثية في عسير', caption: 'رجال ألمع · عسير',
+      summary: 'في عسير والباحة وجازان ونجران، تتنوع البيئات بين قممٍ معتدلة وسهولٍ دافئة. قرى الحجر والمدرّجات الزراعية وفنون القطّ والنقوش تحكي علاقةً طويلةً بالأرض والمطر والمجتمع.',
+      landmarks: 'رجال ألمع، قرية ذي عين، الأخدود', customs: 'القطّ العسيري، الزراعة، المجالس', art: 'الخطوة الجنوبية والعرضة'
+    }
+  },
+  items: [
+    { title: 'الطين النجدي', category: 'architecture', categoryLabel: 'عمارة', region: 'central', regionLabel: 'الوسطى', desc: 'جدران من الطين واللبن، فتحات صغيرة، وساحات داخلية تحمي من الحرّ وتجمع أهل البيت.', detail: 'تطوّرت البيوت والقصور في نجد باستعمال مواد محلية مثل الطين واللبن وجذوع الأثل. ساعدت الجدران السميكة والفتحات المحدودة على تلطيف الداخل، وأضفت الزخارف الهندسية على الواجهات علامةً بصريةً للمنطقة.', marker: 'مواد محلية · تكيّف مناخي' },
+    { title: 'الرواشين الحجازية', category: 'architecture', categoryLabel: 'عمارة', region: 'west', regionLabel: 'الغربية', desc: 'شبابيك خشبية بارزة توازن بين الظلّ والهواء والخصوصية في نسيج جدة القديم.', detail: 'في جدة التاريخية، تتقدّم الرواشين الخشبية عن الجدار، فتخفف ضوء الشمس وتتيح مرور الهواء وتوفر الخصوصية. شُيّدت بيوت كثيرة من الحجر المرجاني الذي جُلب من ساحل البحر الأحمر، مع طبقات جيرية لحماية الجدران.', marker: 'حجر مرجاني · رواشين' },
+    { title: 'سوق القيصرية', category: 'architecture', categoryLabel: 'عمارة', region: 'east', regionLabel: 'الشرقية', desc: 'سوق تاريخي في الهفوف، تتجاور فيه الممرات المسقوفة والحوانيت في قلب الواحة.', detail: 'يُعد سوق القيصرية من المعالم التاريخية في الهفوف بالأحساء. تنظم ممراته المسقوفة دكاكين السوق وتمنحها الظل، وهو جزء من مشهد الواحة والأسواق التقليدية التي نشأت حول تجارة التمر والحرف والمنتجات المحلية.', marker: 'الأحساء · سوق تقليدي' },
+    { title: 'قرى الحجر في عسير', category: 'architecture', categoryLabel: 'عمارة', region: 'south', regionLabel: 'الجنوبية', desc: 'كتل حجرية متدرجة على السفوح، تتكامل مع الألوان والزخارف داخل البيوت.', detail: 'تستفيد عمارة القرى الجبلية من الحجر المتاح محليًا ومن تضاريس السفح. وفي عسير، يحوّل فن القطّ مساحاتٍ داخليةً إلى لوحات هندسية ملونة، تنفذها النساء بأصباغ وخطوط متوارثة.', marker: 'حجر جبلي · قطّ عسيري' },
+    { title: 'الثوب النجدي', category: 'fashion', categoryLabel: 'أزياء', region: 'central', regionLabel: 'الوسطى', desc: 'ثوبٌ واسع بقصّة عملية، تتبدل تفاصيله وخاماته مع الفصول والمناسبات.', detail: 'تتعدد أشكال الثوب الرجالي في نجد، وتُختار خاماته بحسب الفصل والمناسبة. وقد تظهر في الثوب أو الغترة أو البشت تفاصيل دقيقة في الحياكة والتطريز، مع بقاء الراحة والملاءمة للمناخ من أسس اللباس.', marker: 'لباس رجالي · نجد' },
+    { title: 'البشت الحساوي', category: 'fashion', categoryLabel: 'أزياء', region: 'east', regionLabel: 'الشرقية', desc: 'عباءة رجالية فاخرة ارتبطت بالحياكة الدقيقة والتطريز على الحواف.', detail: 'اشتهرت الأحساء بحياكة البشوت، وهي عباءات رجالية تُنسج من خامات خفيفة أو دافئة وفق الموسم. يبرز جمالها في دقة الخياطة والتطريز اليدوي حول الأطراف، وتلبس في المناسبات والاحتفالات.', marker: 'حياكة يدوية · الأحساء' },
+    { title: 'المحوثل العسيري', category: 'fashion', categoryLabel: 'أزياء', region: 'south', regionLabel: 'الجنوبية', desc: 'قطعة نسائية تقليدية تتنوع ألوانها وتفاصيلها من قرية إلى أخرى.', detail: 'تظهر في الأزياء النسائية في جنوب المملكة قطعٌ تقليدية مثل المحوثل، وتختلف تسمياتها وهيئاتها بين المجتمعات المحلية. وتبرز معها أغطية الرأس مثل المقنع، وألوان وزخارف ترتبط بالذائقة والحرفة المحلية.', marker: 'زيّ نسائي · جنوب المملكة' },
+    { title: 'الشيلة والمقنع', category: 'fashion', categoryLabel: 'أزياء', region: 'south', regionLabel: 'الجنوبية', desc: 'أغطية رأس وظيفية وزخرفية تتباين خاماتها وألوانها بحسب المنطقة.', detail: 'الشيلة والمقنع من أغطية الرأس المعروفة في مناطق متعددة، وتختلف طريقة ارتدائهما والخامات والزخارف المصاحبة لهما بحسب البيئة والمناسبة. وتُظهر تفاصيل النسيج والحواف أثر المهارات اليدوية المحلية.', marker: 'أغطية رأس · تنوع إقليمي' },
+    { title: 'العرضة السعودية', category: 'art', categoryLabel: 'فن شعبي', region: 'central', regionLabel: 'الوسطى', desc: 'صفوفٌ متقابلة، شعرٌ حماسيّ، وإيقاع الطبول في مناسبات الفرح والوطن.', detail: 'العرضة السعودية أداءٌ جماعي يجمع الشعر والرقص بالسيف وإيقاع الطبول. تشتهر بها نجد، وتؤدّى في الأعياد والمناسبات الوطنية والاحتفالات، بوصفها ممارسةً اجتماعيةً تحفظ معنى المشاركة والاعتزاز.', marker: 'طبول · شعر · صفوف' },
+    { title: 'السامري', category: 'art', categoryLabel: 'فن شعبي', region: 'central', regionLabel: 'الوسطى', desc: 'غناءٌ جماعيّ وإيقاعٌ يُؤدّى في سهرات المجالس والاحتفالات.', detail: 'من الفنون الغنائية التي تنتشر في نجد ومناطق خليجية، ويعتمد السامري على أداء جماعي وإيقاع تصنعه الدفوف أو الطبول الخفيفة. تتنوع قصائده بين الوجداني والاجتماعي، ويرتبط بالمجالس والسمر.', marker: 'غناء جماعي · إيقاع' },
+    { title: 'المزمار', category: 'art', categoryLabel: 'فن شعبي', region: 'west', regionLabel: 'الغربية', desc: 'إيقاعٌ حيويّ بالطبول والعصي، حاضرٌ في احتفالات جدة ومكة.', detail: 'المزمار فنٌّ أدائي حجازي يشترك فيه الرجال في حلقةٍ تتبادل فيها الحركات والإيقاع بالعصي، على أنغام الطبول. يُؤدّى في الأعراس والأعياد والمناسبات الاجتماعية، ويُعرف بالحركة الجماعية النشطة.', marker: 'طبول · عصي · حلقة' },
+    { title: 'نقوش جبة الصخرية', category: 'art', categoryLabel: 'فنّ تراثي', region: 'north', regionLabel: 'الشمالية', desc: 'رسوم ونقوش على صخور حائل تحفظ مشاهد من حياة البشر والحيوان عبر آلاف السنين.', detail: 'في جبة والشويمس بمنطقة حائل، تكشف الفنون الصخرية عن رسوم ونقوش تعود إلى فترات مختلفة، تسجّل حضور الإنسان والحيوان وتغيّر البيئة عبر الزمن. أُدرجت الفنون الصخرية في منطقة حائل على قائمة التراث العالمي عام 2015.', marker: 'حائل · رسوم ونقوش صخرية' },
+    { title: 'الخطوة الجنوبية', category: 'art', categoryLabel: 'فن شعبي', region: 'south', regionLabel: 'الجنوبية', desc: 'خطواتٌ متناسقة وأهازيجٌ ترفعها الجماعة في مواسم اللقاء والفرح.', detail: 'تتعدد الفنون الأدائية في جنوب المملكة. وتقوم الخطوة على تتابع الخطوات في صفوف أو حلقات، بمصاحبة الأهازيج وإيقاع الطبول في الاحتفالات والمناسبات المجتمعية.', marker: 'خطوات متتابعة · أهزوجة' },
+    { title: 'الخبيتي', category: 'art', categoryLabel: 'فن شعبي', region: 'west', regionLabel: 'الغربية', desc: 'لونٌ غنائيّ راقص ارتبط بالمجتمع الساحلي والاحتفال.', detail: 'الخبيتي من ألوان الغناء والأداء الشعبي في الحجاز والساحل الغربي، يصاحبه إيقاع الدفوف والطبول وتؤدّى حركاته على وقع الأهازيج. تتباين أشكاله محليًا ويظهر في الاحتفالات والمناسبات.', marker: 'دفوف · إيقاع ساحلي' },
+    { title: 'الجريش', category: 'food', categoryLabel: 'أكل وضيافة', region: 'central', regionLabel: 'الوسطى', desc: 'قمح مجروش يُطهى على مهلٍ حتى يلين، ويُقدّم في موائد البيوت والمناسبات.', detail: 'يُحضّر الجريش من حبوب القمح المجروشة، وتُطهى عادةً مع اللبن أو المرق حتى تتماسك. تختلف الإضافات بين الأسر، لكنه حاضرٌ في مطابخ نجد وفي مناسباتٍ عائلية كثيرة.', marker: 'قمح · طبق منزلي' },
+    { title: 'السليق', category: 'food', categoryLabel: 'أكل وضيافة', region: 'west', regionLabel: 'الغربية', desc: 'أرزّ أبيض مطهوّ بقوام كريميّ، من أشهر أطباق الحجاز.', detail: 'السليق الحجازي طبق أرز يُطهى في الماء أو المرق ثم يُستكمل باللبن أو الحليب حتى يكتسب قوامًا ناعمًا. يُقدّم غالبًا مع اللحم أو الدجاج ويُعد من أطباق الحجاز المعروفة.', marker: 'أرز · حجاز' },
+    { title: 'الحنيني', category: 'food', categoryLabel: 'أكل وضيافة', region: 'central', regionLabel: 'الوسطى', desc: 'تمرٌ وخبزٌ وسمن؛ مكونات بسيطة تمنح طبق الشتاء دفأه.', detail: 'يُحضّر الحنيني في نجد عادةً من التمر والخبز والسمن، وتختلف طريقة العجن والطهي من بيتٍ إلى آخر. يكثر تقديمه في الشتاء لما يمنحه من دفء وطاقة.', marker: 'تمر · خبز · سمن' },
+    { title: 'العريكة', category: 'food', categoryLabel: 'أكل وضيافة', region: 'south', regionLabel: 'الجنوبية', desc: 'خبزٌ يُفتّت ويُمزج بالتمر والسمن أو العسل، من مذاقات الجنوب.', detail: 'تُحضّر العريكة من خبزٍ طري يُفتّت ثم يُخلط بالتمر والسمن، وقد تضاف إليها القشطة أو العسل في بعض الوصفات. تختلف مكوناتها بحسب المنطقة والبيت.', marker: 'خبز · تمر · سمن' },
+    { title: 'الكليجا', category: 'food', categoryLabel: 'أكل وضيافة', region: 'central', regionLabel: 'الوسطى', desc: 'قرصٌ محشوّ بالتمر والبهارات، اشتهرت به بيوت القصيم.', detail: 'الكليجا حلوى مخبوزة ترتبط بالقصيم، تُحشى غالبًا بخليط التمر والبهارات مثل الهيل والقرفة، وتُقدّم مع القهوة أو تُحمل في السفر والزيارات.', marker: 'القصيم · حلوى مخبوزة' },
+    { title: 'الكبسة', category: 'food', categoryLabel: 'أكل وضيافة', region: 'all', regionLabel: 'مناطق المملكة', desc: 'أرزّ وبهارات ولحم أو دجاج؛ طبقٌ يجمع الأسرة حول مائدة واحدة.', detail: 'تُعدّ الكبسة من الأطباق السعودية المعروفة، وتقوم على الأرز المطهوّ مع اللحم أو الدجاج والبهارات. تتغير نسب التوابل وطريقة الطهي من منطقة إلى أخرى ومن عائلة إلى أخرى.', marker: 'أرز · بهارات · مائدة' }
+  ],
+  fashion: [
+    { title: 'الثوب النجدي', region: 'central', gender: 'رجالي', material: 'قطن أو صوف بحسب الفصل', embroidery: 'تفاصيل دقيقة في الياقة والأكمام، مع اختلاف الثوب اليومي عن ثوب المناسبة.', description: 'قصّة عملية واسعة تناسب الحياة اليومية، يكمّلها البشت في المجالس والاحتفالات.' },
+    { title: 'البشت الحساوي', region: 'east', gender: 'رجالي', material: 'أنسجة خفيفة أو صوفية فاخرة', embroidery: 'تطريز يدوي على الحواف والعِقالة بخيوط ذهبية أو حريرية.', description: 'تشتهر الأحساء بحياكة البشوت، وتبرز الحرفة في دقة النسج وتشطيب الأطراف.' },
+    { title: 'المحوثل العسيري', region: 'south', gender: 'نسائي', material: 'أقمشة قطنية ملوّنة', embroidery: 'ألوان وخطوط تزيينية تختلف باختلاف المكان والمناسبة.', description: 'نموذج من الأزياء النسائية الجنوبية التي تحفظها الحرفة وتنوعها المحلي.' },
+    { title: 'الشيلة', region: 'west', gender: 'نسائي', material: 'قطن أو أقمشة ناعمة وخفيفة', embroidery: 'قد تزيّن الأطراف بخيوط أو حواف بسيطة وفق العادة المحلية.', description: 'غطاء رأس عمليّ تتنوع طرق ارتدائه وخاماته بين المدن والقرى.' },
+    { title: 'الفستان الشمالي التقليدي', region: 'north', gender: 'نسائي', material: 'أقمشة ثقيلة أو خفيفة بحسب المناخ والموسم', embroidery: 'تظهر في بعض أثواب شمال المملكة أقمشة حريرية مطرزة بخيوط معدنية؛ وتختلف التفاصيل بين المناطق والمناسبات.', description: 'فستان طويل بأكمام واسعة؛ تتغير ألوانه وخاماته بين المجتمعات والمناسبات.' },
+    { title: 'المقنع', region: 'south', gender: 'نسائي', material: 'نسيج خفيف أو قطن', embroidery: 'زخارف وألوان تتصل بالهوية المحلية وفنّ النسيج.', description: 'غطاء تقليدي للرأس يُرى في مناطق جنوبية، ويختلف شكله وتفصيله بين المجتمعات.' }
+  ],
+  arts: [
+    { title: 'العرضة السعودية', region: 'الوسطى', regionClass: 'central', rhythm: 'طبول، شعر حماسي، سيوف', occasion: 'الأعياد والمناسبات الوطنية والاحتفالات', symbol: '◌', description: 'صفوف تتمايل على إيقاع الطبول، وتردّد أبياتًا تحفظ معاني الشجاعة والوحدة.' },
+    { title: 'السامري', region: 'نجد والخليج', regionClass: 'central', rhythm: 'دفوف وطبول خفيفة، غناء جماعي', occasion: 'سهرات المجالس واللقاءات الاجتماعية', symbol: '♬', description: 'صوتٌ جماعي وإيقاعٌ متوارث، تتبدل قصائده بين الوجداني والاجتماعي.' },
+    { title: 'المزمار', region: 'الحجاز', regionClass: 'west', rhythm: 'طبول وعصيّ وحركة جماعية', occasion: 'الأعراس والأعياد والمناسبات', symbol: '⟲', description: 'حلقة من المؤدين تتبادل الحركة والإيقاع في لونٍ حجازيّ حيّ.' },
+    { title: 'الخطوة الجنوبية', region: 'الجنوب', regionClass: 'south', rhythm: 'خطوات متتابعة وأهازيج وطبول', occasion: 'المناسبات المحلية ومواسم اللقاء', symbol: '⌁', description: 'صفوف أو حلقات تمضي بخطوات منتظمة، تتجاوب مع صوت الجماعة.' },
+    { title: 'الخبيتي', region: 'الساحل الغربي', regionClass: 'west', rhythm: 'دفوف وطبول وأهازيج', occasion: 'الاحتفالات والأفراح الساحلية', symbol: '◍', description: 'غناءٌ وحركةٌ على إيقاع الساحل، تتوارثه المجتمعات الحجازية.' }
+  ],
+  food: [
+    { title: 'الكبسة', region: 'مائدة سعودية جامعة', text: 'أرزّ يُطهى مع اللحم أو الدجاج ومزيجٍ من البهارات؛ تتغير نكهته بتغيّر وصفة البيت والمنطقة.', icon: '✳' },
+    { title: 'الجريش', region: 'نجد', text: 'قمح مجروش يُطبخ ببطء حتى يلين، ويُقدّم مع اللبن أو المرق بحسب الوصفة.', icon: '◌' },
+    { title: 'السليق', region: 'الحجاز', text: 'أرزّ ناعم القوام يُطهى بالمرق واللبن، وغالبًا يرافقه اللحم أو الدجاج.', icon: '⌁' },
+    { title: 'الحنيني', region: 'نجد والقصيم', text: 'تمرٌ وخبزٌ وسمن تُجمع في طبقٍ دافئ، يكثر حضوره في ليالي الشتاء.', icon: '❋' },
+    { title: 'العريكة', region: 'جنوب المملكة', text: 'خبزٌ طري يُفتّت ويُمزج بالتمر والسمن، وقد يضاف العسل أو القشطة.', icon: '◈' },
+    { title: 'الكليجا', region: 'القصيم', text: 'حلوى مخبوزة محشوة بالتمر والبهارات، ترافق القهوة والزيارات.', icon: '✺' }
+  ],
+  unesco: [
+    { id: 'hegra', year: 2008, short: 'الحِجر', name: 'الحِجر (مدائن صالح)', place: 'العُلا · المدينة المنورة', url: 'https://whc.unesco.org/en/list/1293/', description: 'أول موقع سعودي يُدرج في قائمة التراث العالمي. يضم 111 مقبرة نبطية ضخمة منحوتة في الصخر، من بينها 94 واجهة مزخرفة، إلى جانب آبار ونقوش صخرية.' },
+    { id: 'turaif', year: 2010, short: 'الطريف', name: 'حي الطريف في الدرعية', place: 'الدرعية · الرياض', url: 'https://whc.unesco.org/en/list/1329/', description: 'مركز الدولة السعودية الأولى، تأسس في القرن الخامس عشر ويشهد على العمارة النجدية الطينية وعلى نشوء عاصمةٍ سياسيةٍ في قلب الجزيرة.' },
+    { id: 'jeddah', year: 2014, short: 'جدة التاريخية', name: 'جدة التاريخية (البلد)', place: 'جدة · مكة المكرمة', url: 'https://whc.unesco.org/en/list/1361/', description: 'ميناء تاريخي على البحر الأحمر وبوابةٌ للحجاج القادمين بحرًا. تميّزت أحياؤه ببيوت الحجر المرجاني والرواشين الخشبية والأسواق.' },
+    { id: 'hail', year: 2015, short: 'الفنون الصخرية', name: 'الفنون الصخرية في منطقة حائل', place: 'جبة والشويمس · حائل', url: 'https://whc.unesco.org/en/list/1472/', description: 'تضم جبة والشويمس لوحاتٍ ونقوشًا صخرية توثّق حياة الإنسان والحيوان في المنطقة على مدى آلاف السنين.' },
+    { id: 'ahsa', year: 2018, short: 'واحة الأحساء', name: 'واحة الأحساء', place: 'الأحساء · المنطقة الشرقية', url: 'https://whc.unesco.org/en/list/1563/', description: 'مشهد ثقافيّ متصل بواحةٍ واسعةٍ من النخيل والعيون والآبار والقنوات، وبمستوطناتٍ وأسواقٍ تاريخية.' },
+    { id: 'hima', year: 2021, short: 'منطقة حمى', name: 'منطقة حمى الثقافية', place: 'نجران · جنوب المملكة', url: 'https://whc.unesco.org/en/list/1619/', description: 'مناظر صخرية غنية بالنقوش والكتابات التي تسجل مسارات القوافل وحياة الناس على مدى آلاف السنين.' },
+    { id: 'uruq', year: 2023, short: 'عروق بني معارض', name: 'محمية عروق بني معارض', place: 'الربع الخالي · جنوب المملكة', url: 'https://whc.unesco.org/en/list/1699/', description: 'منظر صحراوي طبيعي يضم موائل متنوعة وكثبانًا رملية، ويُعد أول موقع طبيعي سعودي يُدرج في قائمة التراث العالمي.' }
+  ],
+  categories: {
+    architecture: 'عمارة', fashion: 'أزياء', food: 'أكل وضيافة', art: 'فنون'
+  },
+  regionNames: { central: 'الوسطى', west: 'الغربية', east: 'الشرقية', north: 'الشمالية', south: 'الجنوبية' }
+};
+(() => {
+  const data = window.RIWAQ_DATA;
+  const $ = (selector, root = document) => root.querySelector(selector);
+  const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+  const escapeHTML = (value = '') => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
+  const normalize = value => String(value || '').normalize('NFKD').replace(/[\u064B-\u065F\u0670\u0640]/g, '').replace(/[أإآٱ]/g, 'ا').replace(/ى/g, 'ي').toLowerCase().trim();
+  const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+  let soundEnabled = true;
+  let audioContext = null;
+  function playTone(frequency, delay, duration, level) {
+    if (!soundEnabled || !AudioContextClass) return;
+    try {
+      audioContext ||= new AudioContextClass();
+      if (audioContext.state === 'suspended') audioContext.resume().catch(() => {});
+      const start = audioContext.currentTime + delay;
+      const oscillator = audioContext.createOscillator();
+      const gain = audioContext.createGain();
+      oscillator.type = 'sine';
+      oscillator.frequency.setValueAtTime(frequency, start);
+      oscillator.frequency.exponentialRampToValueAtTime(frequency * 0.96, start + duration);
+      gain.gain.setValueAtTime(0.0001, start);
+      gain.gain.exponentialRampToValueAtTime(level, start + 0.012);
+      gain.gain.exponentialRampToValueAtTime(0.0001, start + duration);
+      oscillator.connect(gain);
+      gain.connect(audioContext.destination);
+      oscillator.start(start);
+      oscillator.stop(start + duration + 0.02);
+    } catch (_) {}
+  }
+  function playSound(kind = 'click') {
+    if (kind === 'section') {
+      playTone(523.25, 0, 0.12, 0.009);
+      playTone(783.99, 0.065, 0.15, 0.006);
+    } else playTone(740, 0, 0.065, 0.006);
+  }
+  const dialog = $('#detail-dialog');
+
+  function openDialog({title, kicker = 'من حكايات رِواق', body, tags = []}) {
+    $('#dialog-kicker').textContent = kicker;
+    $('#dialog-title').textContent = title;
+    $('#dialog-body').textContent = body;
+    $('#dialog-tags').innerHTML = tags.map(tag => `<span>${escapeHTML(tag)}</span>`).join('');
+    if (typeof dialog.showModal === 'function') dialog.showModal();
+  }
+  $('#dialog-close').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+
+  function setRegion(key) {
+    const region = data.regions[key];
+    if (!region) return;
+    $$('.region-tab').forEach(tab => {
+      const active = tab.dataset.region === key;
+      tab.classList.toggle('is-active', active);
+      tab.setAttribute('aria-selected', String(active));
+      tab.tabIndex = active ? 0 : -1;
+    });
+    $('#region-kicker').textContent = region.kicker;
+    $('#region-index').textContent = region.index;
+    $('#region-name').textContent = region.name;
+    $('#region-summary').textContent = region.summary;
+    $('#region-landmarks').textContent = region.landmarks;
+    $('#region-customs').textContent = region.customs;
+    $('#region-art').textContent = region.art;
+    $('#region-caption').textContent = region.caption;
+    const image = $('#region-image');
+    image.style.opacity = '0.25';
+    window.setTimeout(() => {
+      image.src = region.image;
+      image.alt = region.alt;
+      image.style.opacity = '1';
+    }, 120);
+    $('#region-discover').onclick = () => {
+      $('#region-filter').value = key;
+      renderExplore();
+    };
+  }
+  $$('.region-tab').forEach((tab, index, tabs) => {
+    tab.addEventListener('click', () => setRegion(tab.dataset.region));
+    tab.addEventListener('keydown', event => {
+      if (!['ArrowRight', 'ArrowLeft', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault();
+      const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (index + (event.key === 'ArrowLeft' ? 1 : -1) + tabs.length) % tabs.length;
+      tabs[next].focus();
+      setRegion(tabs[next].dataset.region);
+      playSound('section');
+    });
+  });
+  setRegion('central');
+
+  let activeType = 'all';
+  function renderExplore() {
+    const search = normalize($('#explore-search').value);
+    const region = $('#region-filter').value;
+    const found = data.items.filter(item => {
+      const matchesType = activeType === 'all' || item.category === activeType;
+      const matchesRegion = region === 'all' || item.region === region || item.region === 'all';
+      const haystack = normalize([item.title, item.desc, item.detail, item.categoryLabel, item.regionLabel, item.marker].join(' '));
+      return matchesType && matchesRegion && (!search || haystack.includes(search));
+    });
+    $('#discover-grid').innerHTML = found.map(item => `
+      <article class="discover-card" tabindex="0" role="button" aria-label="اقرأ حكاية ${escapeHTML(item.title)}" data-item="${escapeHTML(item.title)}">
+        <div class="discover-topline"><span class="card-type">${escapeHTML(item.categoryLabel)}</span><span class="card-region">${escapeHTML(item.regionLabel)}</span></div>
+        <div><h3>${escapeHTML(item.title)}</h3><p>${escapeHTML(item.desc)}</p></div>
+        <div class="discover-bottom"><span>${escapeHTML(item.marker)}</span><span class="discover-arrow" aria-hidden="true">↙</span></div>
+      </article>`).join('');
+    const count = found.length.toLocaleString('ar-SA');
+    $('#result-count').textContent = `عرض ${count} حكاية`;
+    $('#empty-state').hidden = found.length !== 0;
+    $$('.discover-card').forEach(card => {
+      const item = data.items.find(entry => entry.title === card.dataset.item);
+      const show = () => openDialog({title: item.title, kicker: `${item.categoryLabel} · ${item.regionLabel}`, body: item.detail, tags: [item.marker, item.categoryLabel, item.regionLabel]});
+      card.addEventListener('click', show);
+      card.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); show(); } });
+    });
+  }
+  $$('.filter-chip').forEach(chip => chip.addEventListener('click', () => {
+    activeType = chip.dataset.type;
+    $$('.filter-chip').forEach(button => {
+      const active = button === chip;
+      button.classList.toggle('is-active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+    renderExplore();
+  }));
+  $('#explore-search').addEventListener('input', renderExplore);
+  $('#region-filter').addEventListener('change', renderExplore);
+  $('#quick-search').addEventListener('submit', event => {
+    event.preventDefault();
+    $('#explore-search').value = $('#quick-search-input').value;
+    renderExplore();
+    document.querySelector('#discover').scrollIntoView({behavior:'smooth'});
+  });
+  $('#quick-search-input').addEventListener('input', event => {
+    $('#explore-search').value = event.target.value;
+    renderExplore();
+  });
+  $('#quick-search-input').addEventListener('keydown', event => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      $('#explore-search').value = event.target.value;
+      renderExplore();
+      document.querySelector('#discover').scrollIntoView({behavior:'smooth'});
+    }
+  });
+  renderExplore();
+
+  let fashionRegion = 'all';
+  const swatches = ['swatch-sand','swatch-green','swatch-red','swatch-indigo','swatch-sand'];
+  function renderFashion() {
+    const clothes = data.fashion.filter(item => fashionRegion === 'all' || item.region === fashionRegion);
+    $('#fashion-grid').innerHTML = clothes.map((item, index) => `
+      <article class="fashion-card" data-fashion="${escapeHTML(item.title)}">
+        <div class="fabric-swatch ${swatches[index % swatches.length]}" aria-hidden="true"></div>
+        <div class="fashion-meta"><span>${escapeHTML(item.gender)}</span><span>${escapeHTML(data.regionNames[item.region])}</span></div>
+        <h3>${escapeHTML(item.title)}</h3><p>${escapeHTML(item.description)}</p>
+        <button class="fashion-detail" type="button">الخامة والتطريز <span aria-hidden="true">↙</span></button>
+      </article>`).join('');
+    $$('.fashion-detail').forEach(button => button.addEventListener('click', () => {
+      const item = data.fashion.find(entry => entry.title === button.closest('.fashion-card').dataset.fashion);
+      openDialog({title:item.title, kicker:`زيّ ${item.gender} · ${data.regionNames[item.region]}`, body:`${item.description} الخامة: ${item.material}. تفاصيل التطريز: ${item.embroidery}`, tags:[item.gender, data.regionNames[item.region], item.material]});
+    }));
+  }
+  $$('.fashion-filter').forEach(button => button.addEventListener('click', () => {
+    fashionRegion = button.dataset.fashionRegion;
+    $$('.fashion-filter').forEach(choice => {
+      const active = choice === button;
+      choice.classList.toggle('is-active', active);
+      choice.setAttribute('aria-pressed', String(active));
+    });
+    renderFashion();
+  }));
+  renderFashion();
+
+  $('#arts-grid').innerHTML = data.arts.map((item, index) => `
+    <article class="art-card" data-reveal>
+      <span class="art-symbol" aria-hidden="true">${escapeHTML(item.symbol)}</span>
+      <span class="art-region">${escapeHTML(item.region)}</span><h3>${escapeHTML(item.title)}</h3>
+      <p>${escapeHTML(item.description)}</p><small>${escapeHTML(item.rhythm)}</small>
+      <button class="art-more" type="button" data-art="${escapeHTML(item.title)}">مناسبة الأداء <span aria-hidden="true">↙</span></button>
+    </article>`).join('');
+  $$('.art-more').forEach(button => button.addEventListener('click', () => {
+    const item = data.arts.find(entry => entry.title === button.dataset.art);
+    openDialog({title:item.title, kicker:`فن شعبي · ${item.region}`, body:`${item.description} أبرز الأدوات والإيقاعات: ${item.rhythm}. يُؤدّى عادةً في ${item.occasion}.`, tags:[item.region, item.rhythm]});
+  }));
+
+  $('#food-grid').innerHTML = data.food.map(item => `
+    <article class="food-card"><span class="food-icon" aria-hidden="true">${escapeHTML(item.icon)}</span><h4>${escapeHTML(item.title)}</h4><span class="food-region">${escapeHTML(item.region)}</span><p>${escapeHTML(item.text)}</p></article>`).join('');
+
+  const timeline = $('#unesco-timeline');
+  timeline.innerHTML = data.unesco.map((site, index) => `
+    <button id="unesco-tab-${site.id}" class="timeline-item${index === 0 ? ' is-active' : ''}" role="tab" aria-selected="${index === 0}" aria-controls="unesco-feature" tabindex="${index === 0 ? 0 : -1}" data-site="${site.id}"><span class="timeline-year">${site.year}</span><span class="timeline-name">${escapeHTML(site.short)}</span></button>`).join('');
+  function selectSite(id) {
+    const site = data.unesco.find(entry => entry.id === id);
+    if (!site) return;
+    $$('.timeline-item').forEach(button => {
+      const active = button.dataset.site === id;
+      button.classList.toggle('is-active', active);
+      button.setAttribute('aria-selected', String(active));
+      button.tabIndex = active ? 0 : -1;
+    });
+    $('#unesco-feature').setAttribute('aria-labelledby', `unesco-tab-${id}`);
+    $('#unesco-year').textContent = site.year;
+    $('#unesco-name').textContent = site.name;
+    $('#unesco-description').textContent = `${site.place} — ${site.description}`;
+    $('#unesco-link').href = site.url;
+  }
+  $$('.timeline-item').forEach((button, index, buttons) => {
+    button.addEventListener('click', () => selectSite(button.dataset.site));
+    button.addEventListener('keydown', event => {
+      if (!['ArrowRight','ArrowLeft','Home','End'].includes(event.key)) return;
+      event.preventDefault();
+      const next = event.key === 'Home' ? 0 : event.key === 'End' ? buttons.length - 1 : (index + (event.key === 'ArrowLeft' ? 1 : -1) + buttons.length) % buttons.length;
+      buttons[next].focus();
+      selectSite(buttons[next].dataset.site);
+      playSound('section');
+    });
+  });
+  selectSite('hegra');
+
+  const menuButton = $('#menu-toggle');
+  const nav = $('#primary-nav');
+  menuButton.addEventListener('click', () => {
+    const open = menuButton.getAttribute('aria-expanded') !== 'true';
+    menuButton.setAttribute('aria-expanded', String(open));
+    menuButton.setAttribute('aria-label', open ? 'إغلاق قائمة التنقل' : 'فتح قائمة التنقل');
+    nav.classList.toggle('is-open', open);
+  });
+  $$('#primary-nav a').forEach(link => link.addEventListener('click', () => {
+    nav.classList.remove('is-open');
+    menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.setAttribute('aria-label', 'فتح قائمة التنقل');
+  }));
+
+  const audioToggle = $('#audio-toggle');
+  const audioToggleLabel = $('#audio-toggle-label');
+  try { soundEnabled = localStorage.getItem('riwaq-audio') !== 'off'; } catch (_) {}
+  function syncAudioToggle() {
+    audioToggle.setAttribute('aria-pressed', String(soundEnabled));
+    audioToggle.setAttribute('aria-label', soundEnabled ? 'كتم المؤثرات الصوتية' : 'تشغيل المؤثرات الصوتية');
+    audioToggle.classList.toggle('is-muted', !soundEnabled);
+    audioToggleLabel.textContent = soundEnabled ? 'الصوت يعمل' : 'الصوت مكتوم';
+  }
+  syncAudioToggle();
+  audioToggle.addEventListener('click', () => {
+    soundEnabled = !soundEnabled;
+    try { localStorage.setItem('riwaq-audio', soundEnabled ? 'on' : 'off'); } catch (_) {}
+    syncAudioToggle();
+    if (soundEnabled) playSound('click');
+  });
+  document.addEventListener('click', event => {
+    if (event.target.closest('#audio-toggle')) return;
+    if (event.target.closest('a[href^="#"], .region-tab, .timeline-item')) playSound('section');
+    else if (event.target.closest('button, [role="button"]')) playSound('click');
+  }, true);
+  document.addEventListener('change', event => {
+    if (event.target.matches('select')) playSound('click');
+  });
+
+  $('#current-year').textContent = new Date().getFullYear().toLocaleString('ar-SA');
+  const revealTargets = $$('.section-heading, .intro-section, .region-explorer, .discover-section, .architecture-card, .architecture-note, .fashion-card, .fashion-footnote, .art-card, .cuisine-block, .food-heading, .unesco-feature, .closing-inner');
+  revealTargets.forEach(target => target.classList.add('reveal'));
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+    }), {threshold:0.12, rootMargin:'0px 0px -35px 0px'});
+    revealTargets.forEach(target => observer.observe(target));
+  } else revealTargets.forEach(target => target.classList.add('is-visible'));
+
+  const motionReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const transitionSections = $$('main > section:not(.hero), main > .closing-band');
+  transitionSections.forEach(section => section.classList.add('section-transition'));
+  if ('IntersectionObserver' in window && !motionReduced) {
+    const sectionObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+      entry.target.classList.toggle('section-in-view', entry.isIntersecting);
+    }), {threshold:0.05, rootMargin:'-8% 0px -8% 0px'});
+    transitionSections.forEach(section => sectionObserver.observe(section));
+  } else transitionSections.forEach(section => section.classList.add('section-in-view'));
+
+  const progressBar = $('#scroll-progress-bar');
+  const navSections = $$('main > section[id]');
+  let scrollUpdateQueued = false;
+  function updateScrollProgress() {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+    progressBar.style.width = `${progress}%`;
+    const anchorLine = window.innerHeight * 0.36;
+    let activeSection = navSections[0];
+    for (const section of navSections) {
+      if (section.getBoundingClientRect().top <= anchorLine) activeSection = section;
+      else break;
+    }
+    $$('#primary-nav a').forEach(link => {
+      const active = link.getAttribute('href') === `#${activeSection.id}`;
+      link.classList.toggle('is-current', active);
+      if (active) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+  }
+  window.addEventListener('scroll', () => {
+    if (scrollUpdateQueued) return;
+    scrollUpdateQueued = true;
+    window.requestAnimationFrame(() => { updateScrollProgress(); scrollUpdateQueued = false; });
+  }, {passive:true});
+  window.addEventListener('resize', updateScrollProgress, {passive:true});
+  updateScrollProgress();
+
+  const pageLoader = $('#page-loader');
+  const loaderStartedAt = performance.now();
+  let loaderClosed = false;
+  function closePageLoader() {
+    if (loaderClosed) return;
+    loaderClosed = true;
+    const wait = motionReduced ? 0 : Math.max(0, 1450 - (performance.now() - loaderStartedAt));
+    window.setTimeout(() => {
+      document.body.classList.add('site-ready');
+      pageLoader.classList.add('is-hidden');
+      pageLoader.setAttribute('aria-hidden', 'true');
+    }, wait);
+  }
+  window.addEventListener('load', closePageLoader, {once:true});
+  window.setTimeout(closePageLoader, 2600);
+})();
+
+  </script>
+</body>
+</html>
